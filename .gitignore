@@ -317,3 +317,4 @@ TSWLatexianTemp*
 *.blg
 *.fdb_latexmk
 *.fls
+.Rproj.user
