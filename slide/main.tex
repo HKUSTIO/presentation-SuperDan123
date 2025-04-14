@@ -28,7 +28,7 @@
 \setbeamertemplate{frametitle}{
     \vspace*{0.5cm}
     \insertframetitle
-    \vspace*{0.2cm}
+    \vspace*{0.3cm}
     \begin{beamercolorbox}[wd=\paperwidth,ht=0.2pt]{structure}
     \end{beamercolorbox}
 }
@@ -41,7 +41,10 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{hyperref}
-
+\usepackage{ragged2e}
+% \usepackage{newtxtext} 
+% \usepackage{newtxmath}
+\AtBeginEnvironment{frame}{\justifying}
 % Title page information
 \title{Two-sided Markets, Pricing, and Network Effects}
 \subtitle{Theoretical and Empirical Study}
@@ -65,13 +68,42 @@
 \section{Introduction}
 \begin{frame}{Introduction}
     \begin{itemize}
-        \item First point
-        \item Second point
-        \item Third point
+        \item A central aspect of platform is the role of network effects:
+        \vspace{1em}
+        \begin{itemize}
+            \item \textbf{Network effect} refers to any situation in which the value of a product, service, or platform depends on the number of buyers, sellers, or users who leverage it
+            \vspace{1em}
+            \item \textbf{Direct network effects} occur when the value of a product, service, or platform increases simply because the number of users increases, causing the network itself to grow
+            \vspace{1em}
+            \item \textbf{Indirect network effects} occur when a platform or service depends on two or more user groups, such as producers and consumers, buyers and sellers, or users and developers
+        \end{itemize}
+
     \end{itemize}
 \end{frame}
 
-% Section 2
+\begin{frame}{Introduction}
+    \begin{itemize}        
+        \item Indirect network leads to feedback loops between the two sides of the market, thus increasing efficiencies and also potential market power
+        \vspace{1em}
+        \item Pricing is one of the key tools that platforms can manage to success
+    \end{itemize}
+    \vspace{2em}
+
+    \textcolor{red}{Main Focus}: \textbf{indirect network effects and pricing strategies in two-sided markets}
+\end{frame}
+
+\begin{frame}{Introduction}
+    \begin{itemize}        
+        \item Two-sided market: at least two distinct sets of agents interact through an intermediary and in which the behavior of each set of agents directly impacts the utility, or the profit of the other agents
+        \vspace{1em}
+        \item \textbf{Two-sided market} vs \textbf{Two-sided strategies}
+        \vspace{1em}
+        \item Treating two-sidedness as a market concept
+    \end{itemize}
+    \vspace{2em}
+\quad \quad Now let's proceed to the benchmark model in Armstrong(2006)
+\end{frame}
+
 \section{Benchmark Model}
 \begin{frame}{Armstrong(2006): Monopoly Pricing}
     \begin{block}{Important Block}
