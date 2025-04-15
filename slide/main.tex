@@ -222,7 +222,7 @@
     \]
 \end{frame}
 
-\begin{frame}{Proposition 1}
+\begin{frame}{Armstrong (2006): Monopoly Pricing}
     \justifying  % Requires \usepackage{ragged2e} in your preamble, if desired
     
     \textbf{Proposition 1.} Write
@@ -274,31 +274,495 @@
     \end{itemize}
     
 \end{frame}
+
+\begin{frame}{Armstrong (2006): Extension of Monopoly Pricing}
+    \justifying  % Requires \usepackage{ragged2e} in the preamble
     
-\begin{frame}{Armstrong(2006): Competition for the Market}
-    \begin{block}{Important Block}
-        Key information goes here
-    \end{block}
+    A monopolist platform, serving two distinct groups that benefit from interacting 
+    with one another, does not simply set each group’s price to cover the marginal 
+    cost of serving that group. Instead, it balances the prices charged to each side 
+    to account for cross‐group externalities and differences in demand elasticities.
+    This leads to the following key insights:
     
     \begin{itemize}
-        \item Method 1
-        \item Method 2
+        \item \textbf{Cross‐Group Externalities:} Prices on one side depend on how 
+        that side’s participation affects the other side’s willingness to join.
+    
+        \item \textbf{Balancing Demand:} If one side’s presence is highly valuable 
+        to the other side, the platform may lower or subsidize that side’s fee 
+        to maximize overall profit.
+    
+        \item \textbf{Interdependence of Pricing:} Optimal monopoly prices for each 
+        group differ from the standard one‐sided monopoly outcome, reflecting 
+        the platform’s internalization of cross‐group effects.
     \end{itemize}
+    
+\end{frame}
+
+\begin{frame}{Armstrong(2006): Competition for the Market}
+    \begin{block}{Basic Setting}
+        \begin{enumerate}
+            \item Two groups of agents: 1, 2
+            \item Two platforms in the market: i, j
+            \item No fixed benefits from using the platform: $\xi_{j}^{i} = 0$
+            \item One group cares about the number of agents in the other group but not itself
+            \item Interaction benefits are different across groups but same across platforms: $\alpha_{1}^{i} = \alpha_{2}^{i}, \alpha_{1}^{j} = \alpha_{2}^{j}$
+            \item The platform can charge a per-agent fee to each group of agents
+            \item Each agent chooses to join a single platfom [\textcolor{red}{single-homing}]
+        \end{enumerate}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Armstrong(2006): Competition for the Market}
+
+    \textbf{Basic model.} There are two groups of agents, labeled 1 and 2, and there are two platforms, \(A\) and \(B\), 
+    which enable these groups to interact. Groups 1 and 2 obtain the respective utilities 
+    \(\bigl\{u_1^i,\,u_2^i\bigr\}\) if they join platform \(i\). These utilities are determined 
+    similarly to the monopoly model in (1): if platform \(i\) attracts \(n_1^i\) and \(n_2^i\) 
+    members of the two groups, then the utilities on platform \(i\) are
+    
+    \[
+       u_1^i \;=\;\alpha_1\,n_2^i \;-\; p_1^i,
+       \qquad
+       u_2^i \;=\;\alpha_2\,n_1^i \;-\; p_2^i.
+       \tag{5}
+    \]
+\end{frame}
+\begin{frame}{Armstrong(2006): Competition for the Market}
+    When group~1 is offered a choice of utilities \(u_{1}^{A}\) and \(u_{1}^{B}\) from the two 
+    platforms, and group~2 is offered the choice \(u_{2}^{A}\) and \(u_{2}^{B}\), suppose the 
+    number of each group who join platform \(i\) is given by the following Hotelling specification:
+    
+    \[
+       n_{1}^{i} 
+       \;=\; 
+       \tfrac{1}{2} 
+       \;+\; 
+       \frac{\,u_{1}^{i} \;-\; u_{1}^{j}\,}{2\,t_{1}},
+       \qquad
+       n_{2}^{i} 
+       \;=\; 
+       \tfrac{1}{2} 
+       \;+\; 
+       \frac{\,u_{2}^{i} \;-\; u_{2}^{j}\,}{2\,t_{2}},
+       \tag{6}
+    \]
+    
+    Here, agents in each group are assumed to be uniformly located along a unit interval, with the 
+    two platforms at the endpoints. The parameters \(t_{1}, t_{2} > 0\) capture the extent of product 
+    differentiation (or “transport costs”) for the two groups, describing how competitive the 
+    two‐sided market is.
+\end{frame}
+
+
+\begin{frame}{Armstrong(2006): Competition for the Market}
+    Putting (6) together with (5), and using the fact that \(n_{1}^{j} = 1 - n_{1}^{i}\),
+    gives the following implicit expressions for market shares:
+    \[
+      n_{1}^{i} 
+      \;=\; 
+      \tfrac{1}{2}
+      \;+\; 
+      \frac{\alpha_{1}\,\bigl(2\,n_{2}^{i}\;-\;1\bigr)\;-\;\bigl(p_{1}^{i}\;-\;p_{1}^{j}\bigr)}
+           {2\,t_{1}},
+      \qquad
+      n_{2}^{i} 
+      \;=\; 
+      \tfrac{1}{2}
+      \;+\; 
+      \frac{\alpha_{2}\,\bigl(2\,n_{1}^{i}\;-\;1\bigr)\;-\;\bigl(p_{2}^{i}\;-\;p_{2}^{j}\bigr)}
+           {2\,t_{2}}
+    \]
+    
+    Keeping its group‐2 price fixed, expression~(7) shows that an extra group‐1 agent on a platform 
+    attracts a further \(\alpha_{2}/t_{2}\) group‐2 agents to that platform.
+    
+\end{frame}
+
+\begin{frame}{Armstrong(2006): Competition for the Market}
+    Suppose platforms \(A\) and \(B\) offer the respective price pairs 
+    \(\bigl(p_{1}^{A},\,p_{2}^{A}\bigr)\) and \(\bigl(p_{1}^{B},\,p_{2}^{B}\bigr)\). 
+    Given these prices, solving the simultaneous equations (7) implies that 
+    the market shares are:
+    
+    \[
+      n_{1}^{i} 
+      \;=\;
+      \tfrac{1}{2}
+      \;+\;
+      \tfrac{1}{2}\,
+      \frac{
+        \alpha_{1}\,\bigl(p_{2}^{j} - p_{2}^{i}\bigr)
+        \;+\; 
+        t_{2}\,\bigl(p_{1}^{j} - p_{1}^{i}\bigr)
+      }{
+        t_{1}\,t_{2} \;-\; \alpha_{1}\,\alpha_{2}
+      },
+      \quad
+      n_{2}^{i} 
+      \;=\; 
+      \tfrac{1}{2}
+      \;+\;
+      \tfrac{1}{2}\,
+      \frac{
+        \alpha_{2}\,\bigl(p_{1}^{j} - p_{1}^{i}\bigr)
+        \;+\;
+        t_{1}\,\bigl(p_{2}^{j} - p_{2}^{i}\bigr)
+      }{
+        t_{1}\,t_{2} \;-\; \alpha_{1}\,\alpha_{2}
+      }
+    \]
+\end{frame}
+
+\begin{frame}{Armstrong(2006): Competition for the Market}
+    As with the monopoly model, suppose each platform has a per‐agent cost 
+    \(f_{1}\) for serving group~1 and \(f_{2}\) for serving group~2.  Then 
+    platform \(i\)’s profit is:
+    \begin{equation*}
+        \scriptsize
+        \bigl(p_{1}^{i} - f_{1}\bigr)
+        \times
+        \left[
+           \tfrac{1}{2} 
+           + 
+           \tfrac{1}{2}\,\frac{\alpha_{1}\,\bigl(p_{2}^{j}-p_{2}^{i}\bigr) 
+                       + t_{2}\,\bigl(p_{1}^{j}-p_{1}^{i}\bigr)}
+                      {t_{1}\,t_{2}-\alpha_{1}\,\alpha_{2}}
+        \right]
+        +
+        \bigl(p_{2}^{i} - f_{2}\bigr)
+        \times
+        \left[
+           \tfrac{1}{2} 
+           +
+           \tfrac{1}{2}\,\frac{\alpha_{2}\,\bigl(p_{1}^{j}-p_{1}^{i}\bigr)
+                       + t_{1}\,\bigl(p_{2}^{j}-p_{2}^{i}\bigr)}
+                      {t_{1}\,t_{2}-\alpha_{1}\,\alpha_{2}}
+        \right]
+    \end{equation*}
+
+    
+    If \((8)\) is satisfied, one can show that no asymmetric equilibria exist, and in a 
+    \emph{symmetric equilibrium} where each platform offers the same price pair 
+    \(\bigl(p_{1},\,p_{2}\bigr)\), the first‐order conditions yield:
+    
+    \[
+      p_{1} 
+      =
+      \underbrace{f_{1}}_{\text{cost}}
+      +
+      \underbrace{t_{1}}_{\text{market power}}
+      -
+      \underbrace{\Bigl(\tfrac{\alpha_{2}}{t_{2}}\Bigr)}_{\text{extra group‐2 agents}}
+      \times
+      \underbrace{\bigl(\alpha_{1} + p_{2} - f_{2}\bigr)}_{\text{profit from an extra group‐2 agent}}
+      \tag{7}
+    \]
+
+\end{frame}
+
+\begin{frame}{Armstrong(2006): Competition for the Market}
+    \justifying  % Requires \usepackage{ragged2e} if you want fully justified text
+
+    \textbf{Alternative tariffs. Uniform prices.} 
+    
+    \medskip
+    
+    Suppose \(\,f_{1} = f_{2} = f\,.\)  It makes little sense to discuss price discrimination if 
+    the costs differ significantly across groups.  Assume each platform cannot set different prices 
+    for groups~1 and~2, so platform \(i\) chooses a single uniform price \(p^{i}\). 
+    (Perhaps sex discrimination laws prevent differential pricing by nightclubs.)  
+    Then platform \(i\)’s profit is \(\bigl(p^{i} - f\bigr)\,\bigl(n_{1}^{i} + n_{2}^{i}\bigr)\).  
+    From \((9)\), total demand for platform~\(i\) is
+    \[
+      n_{1}^{i} + n_{2}^{i}
+      \;=\;
+      1
+      \;+\;
+      \frac{1}{2}
+      \frac{\,t_{1} + t_{2} + \alpha_{1} + \alpha_{2}\,}
+           {\,t_{1}\,t_{2} - \alpha_{1}\,\alpha_{2}\,}
+      \bigl(p^{j} - p^{i}\bigr).
+    \]
+    
+    Solving the resulting first‐order conditions implies the equilibrium uniform price is
+    \[
+      p 
+      \;=\; 
+      f 
+      \;+\;
+      2\,\frac{\;t_{1}\,t_{2} \;-\; \alpha_{1}\,\alpha_{2}\;}
+                {\;t_{1} \;+\; t_{2} \;+\; \alpha_{1} \;+\; \alpha_{2}\,}
+      \tag{8}
+    \]
+\end{frame}
+
+\begin{frame}{Armstrong(2006): Competition for the Market}
+    \justifying  % Requires \usepackage{ragged2e} if you want fully justified text
+    \textbf{Two-Part Tariffs}: a continuum of symmetric equilibria exist. Let 
+    \(0 \,\leq\, \gamma_{1} \,\leq\, 2\alpha_{1}\) and 
+    \(0 \,\leq\, \gamma_{2} \,\leq\, 2\alpha_{2}\)
+    be the marginal prices charged to group~1 and group~2, respectively. 
+    An equilibrium exists in which both platforms offer the same pair of two‐part tariffs 
+    \(\bigl(T_{1},T_{2}\bigr)\) defined by:
+    \[
+       T_{1} \;=\; p_{1} \;+\; \gamma_{1}\,n_{2}, 
+       \qquad
+       T_{2} \;=\; p_{2} \;+\; \gamma_{2}\,n_{1},
+    \]
+    where the \emph{fixed fees} \(p_{1}, p_{2}\) satisfy
+    \[
+       p_{1} 
+       \;=\; 
+       f_{1} 
+       \;+\; 
+       t_{1} 
+       \;-\; 
+       \alpha_{2}
+       \;+\; 
+       \tfrac{1}{2}\,\bigl(\gamma_{2} - \gamma_{1}\bigr),
+       \qquad
+       p_{2} 
+       \;=\; 
+       f_{2} 
+       \;+\;
+       t_{2} 
+       \;-\; 
+       \alpha_{1}
+       \;+\; 
+       \tfrac{1}{2}\,\bigl(\gamma_{1} - \gamma_{2}\bigr).
+       \tag{17}
+    \]
+
+    \[
+       \pi 
+       \;=\; 
+       \frac{\,t_{1} + t_{2} - \alpha_{1} - \alpha_{2}\,}{2} 
+       \;+\; 
+       \frac{\gamma_{1} + \gamma_{2}}{4}.
+    \]
+\end{frame}
+
+\begin{frame}{Armstrong (2006): Main Conclusions of Competition for the Market}
+    \justifying  % Requires \usepackage{ragged2e} in the preamble
+    
+    A monopolist platform, serving two distinct groups that benefit from interacting 
+    with one another, does not simply set each group’s price to cover the marginal 
+    cost of serving that group. Instead, it balances the prices charged to each side 
+    to account for cross‐group externalities and differences in demand elasticities.
+    This leads to the following key insights:
+    
+    \begin{itemize}
+        \item \textbf{Cross‐Group Externalities:} Prices on one side depend on how 
+        that side’s participation affects the other side’s willingness to join.
+    
+        \item \textbf{Balancing Demand:} If one side’s presence is highly valuable 
+        to the other side, the platform may lower or subsidize that side’s fee 
+        to maximize overall profit.
+    
+        \item \textbf{Interdependence of Pricing:} Optimal monopoly prices for each 
+        group differ from the standard one‐sided monopoly outcome, reflecting 
+        the platform’s internalization of cross‐group effects.
+    \end{itemize}
+    
+\end{frame}
+
+\begin{frame}{Armstrong (2006): Extension of Competition for the Market}
+    \justifying  % Requires \usepackage{ragged2e} in the preamble
+    
+    A monopolist platform, serving two distinct groups that benefit from interacting 
+    with one another, does not simply set each group’s price to cover the marginal 
+    cost of serving that group. Instead, it balances the prices charged to each side 
+    to account for cross‐group externalities and differences in demand elasticities.
+    This leads to the following key insights:
+    
+    \begin{itemize}
+        \item \textbf{Cross‐Group Externalities:} Prices on one side depend on how 
+        that side’s participation affects the other side’s willingness to join.
+    
+        \item \textbf{Balancing Demand:} If one side’s presence is highly valuable 
+        to the other side, the platform may lower or subsidize that side’s fee 
+        to maximize overall profit.
+    
+        \item \textbf{Interdependence of Pricing:} Optimal monopoly prices for each 
+        group differ from the standard one‐sided monopoly outcome, reflecting 
+        the platform’s internalization of cross‐group effects.
+    \end{itemize}
+    
 \end{frame}
 
 \begin{frame}{Armstrong(2006): Competition on the Market}
-    \begin{block}{Important Block}
-        Key information goes here
+    \begin{block}{Basic Setting}
+        \begin{enumerate}
+            \item Two groups of agents: 1, 2
+            \item Two platforms in the market: i, j
+            \item No fixed benefits from using the platform: $\xi_{j}^{i} = 0$
+            \item One group cares about the number of agents in the other group but not itself
+            \item Interaction benefits are different across groups but same across platforms: $\alpha_{1}^{i} = \alpha_{2}^{i}, \alpha_{1}^{j} = \alpha_{2}^{j}$
+            \item The platform can charge a per-agent fee to each group of agents
+            \item Each agent chooses to join a single platfom [\textcolor{red}{single-homing}]
+        \end{enumerate}
     \end{block}
-    
-    \begin{itemize}
-        \item Method 1
-        \item Method 2
-    \end{itemize}
 \end{frame}
 
-% Section 3
-\section{Comments and Insights}
+\begin{frame}{Armstrong(2006): Competition on the Market}
+    \justifying  % Requires \usepackage{ragged2e} if you want fully justified paragraphs
+
+    \textbf{A general framework.} Suppose there are two (possibly asymmetric) platforms 
+    that facilitate interaction between two groups of agents.  Suppose that group‐2 
+    agents are heterogeneous: if there are \(n_{1}^{i}\) group‐1 agents on platform~\(i\), 
+    the number of group‐2 agents prepared to pay a fixed fee \(p_{2}^{i}\) to join that 
+    platform is
+    \[
+       n_{2}^{i} 
+       \;=\; 
+       \phi^{\,i}\bigl(n_{1}^{i},\,p_{2}^{i}\bigr)
+    \]
+    where \(\phi^{\,i}\) is decreasing in \(p_{2}^{i}\) and increasing in \(n_{1}^{i}\). 
+    A group‐2 agent’s decision to join one platform does not depend on whether she also 
+    joins the rival platform.
+    
+    \medskip
+    
+    Let \(R^{i}\bigl(n_{1}^{i},\,n_{2}^{i}\bigr)\) denote platform~\(i\)’s revenue from 
+    group~2 when it has \(n_{1}^{i}\) group‐1 agents and sets its group‐2 price so that 
+    \(n_{2}^{i}\) group‐2 agents join. Formally,
+    \[
+       R^{i}\Bigl(n_{1}^{i},\,\phi^{\,i}\bigl(n_{1}^{i},\,p_{2}^{i}\bigr)\Bigr)
+       \;=\;
+       p_{2}^{i}\,\phi^{\,i}\bigl(n_{1}^{i},\,p_{2}^{i}\bigr)
+    \]
+    
+    \[
+       u_{1}^{i}
+       \;=\;
+       U^{\,i}\bigl(n_{2}^{i}\bigr)
+       \;-\;
+       p_{1}^{i}.
+    \]
+\end{frame}
+
+\begin{frame}{Armstrong(2006): Competition on the Market}
+    \justifying  % Requires \usepackage{ragged2e} if you want fully justified text
+
+    When a group‐1 agent’s utility with platform \(i\) is \(u_{1}^{i}\), suppose the platform 
+    attracts 
+    \[
+       n_{1}^{i} 
+       \;=\; 
+       \Phi^{\,i}\bigl(u_{1}^{i},\,u_{1}^{j}\bigr)
+    \]
+    where \(\Phi^{\,i}\) is increasing in its first argument and decreasing in its second.  
+    Let \(C^{i}(n_{1}^{i},n_{2}^{i})\) denote the total cost to platform~\(i\) of serving both groups.  
+    Then platform~\(i\)’s profit is
+    \[
+       \pi^{i}
+       \;=\;
+       n_{1}^{i}\,p_{1}^{i}
+       \;+\;
+       R^{i}\!\bigl(n_{1}^{i},\,n_{2}^{i}\bigr)
+       \;-\;
+       C^{i}\!\bigl(n_{1}^{i},\,n_{2}^{i}\bigr)
+    \]
+    where \(R^{i}\) is platform~\(i\)’s revenue from group~2 (as defined previously).
+ 
+    
+\end{frame}
+
+\begin{frame}{Armstrong(2006): Competition on the Market}
+    Next, in equilibrium, the number of group‐2 agents on each platform is derived from 
+    the equilibrium market shares for group~1.  Suppose platform~\(i\) sets a group‐1 
+    utility \(\hat{u}_{1}^{i}\) and thus attracts \(\hat{n}_{1}^{i}\) agents.  
+    By varying \(p_{1}^{i}\) and \(n_{2}^{i}\) so that \(\hat{u}_{1}^{i} 
+    = U^{\,i}\bigl(n_{2}^{i}\bigr) - p_{1}^{i}\) remains constant, the platform’s profit 
+    becomes
+    \[
+       \pi^{i}
+       \;=\;
+       \hat{n}_{1}^{i}\,\Bigl[\,
+         U^{\,i}\bigl(n_{2}^{i}\bigr)
+         \;-\;
+         \hat{u}_{1}^{i}
+       \Bigr]
+       \;+\;
+       R^{i}\!\bigl(\hat{n}_{1}^{i},\,n_{2}^{i}\bigr)
+       \;-\;
+       C^{i}\!\bigl(\hat{n}_{1}^{i},\,n_{2}^{i}\bigr).
+    \]
+    Given \(\hat{n}_{1}^{i}\), platform~\(i\) chooses \(\hat{n}_{2}^{i}\) to maximize 
+    \(\hat{n}_{1}^{i}\,U^{\,i}(\cdot) + R^{i}\bigl(\hat{n}_{1}^{i},\cdot\bigr) 
+    - C^{i}\bigl(\hat{n}_{1}^{i},\cdot\bigr)\), i.e.,
+    \[
+       \hat{n}_{2}^{i}
+       \;=\;
+       \arg\max_{n_{2}}
+       \bigl[\,
+          \hat{n}_{1}^{i}\,U^{\,i}(n_{2})
+          \;+\;
+          R^{i}\!\bigl(\hat{n}_{1}^{i},\,n_{2}\bigr)
+          \;-\;
+          C^{i}\!\bigl(\hat{n}_{1}^{i},\,n_{2}\bigr)
+       \bigr]
+    \]
+    The equilibrium price to group~2 is \(\hat{p}_{2}^{\,i}\), where
+    \[
+       \hat{n}_{2}^{i}
+       \;=\;
+       \phi^{\,i}
+       \bigl(\hat{n}_{1}^{i},\,\hat{p}_{2}^{\,i}\bigr)
+    \]
+    
+\end{frame}
+
+\begin{frame}{Armstrong (2006): Main Conclusions of Competition on the Market}
+    \justifying  % Requires \usepackage{ragged2e} in the preamble
+    
+    A monopolist platform, serving two distinct groups that benefit from interacting 
+    with one another, does not simply set each group’s price to cover the marginal 
+    cost of serving that group. Instead, it balances the prices charged to each side 
+    to account for cross‐group externalities and differences in demand elasticities.
+    This leads to the following key insights:
+    
+    \begin{itemize}
+        \item \textbf{Cross‐Group Externalities:} Prices on one side depend on how 
+        that side’s participation affects the other side’s willingness to join.
+    
+        \item \textbf{Balancing Demand:} If one side’s presence is highly valuable 
+        to the other side, the platform may lower or subsidize that side’s fee 
+        to maximize overall profit.
+    
+        \item \textbf{Interdependence of Pricing:} Optimal monopoly prices for each 
+        group differ from the standard one‐sided monopoly outcome, reflecting 
+        the platform’s internalization of cross‐group effects.
+    \end{itemize}
+    
+\end{frame}
+
+\begin{frame}{Armstrong (2006): Extension of Competition on the Market}
+    \justifying  % Requires \usepackage{ragged2e} in the preamble
+    
+    A monopolist platform, serving two distinct groups that benefit from interacting 
+    with one another, does not simply set each group’s price to cover the marginal 
+    cost of serving that group. Instead, it balances the prices charged to each side 
+    to account for cross‐group externalities and differences in demand elasticities.
+    This leads to the following key insights:
+    
+    \begin{itemize}
+        \item \textbf{Cross‐Group Externalities:} Prices on one side depend on how 
+        that side’s participation affects the other side’s willingness to join.
+    
+        \item \textbf{Balancing Demand:} If one side’s presence is highly valuable 
+        to the other side, the platform may lower or subsidize that side’s fee 
+        to maximize overall profit.
+    
+        \item \textbf{Interdependence of Pricing:} Optimal monopoly prices for each 
+        group differ from the standard one‐sided monopoly outcome, reflecting 
+        the platform’s internalization of cross‐group effects.
+    \end{itemize}
+    
+\end{frame}
+
+\section{Extensions and Insights}
 \begin{frame}{Results}
     \begin{columns}
         \column{0.5\textwidth}
@@ -315,13 +779,30 @@
 \end{frame}
 
 % Section 4
-\section{Summary}
-\begin{frame}{Conclusion}
+\section{Conclusion and Future Directions}
+\begin{frame}{Conclusion and Future Directions}
+    \justifying  % Requires \usepackage{ragged2e} if you want full justification
+    \textbf{Monopoly and Competition.}
     \begin{itemize}
-        \item Main finding 1
-        \item Main finding 2
-        \item Future work
+      \item Monopoly Platforms: Compared profit‐maximizing versus welfare‐maximizing 
+            outcomes, showing how network effects influence price levels.
+      \item Platform Competition: Discussed how modeling “competition for the market” versus 
+            “competition on the market” must account for single‐homing or multi‐homing. 
+            Also emphasized matching design and within‐side price discrimination.
     \end{itemize}
 \end{frame}
 
-\end{document} 
+\begin{frame}
+    \textbf{Gaps and Future Research.}
+    \begin{itemize}
+      \item \emph{Dynamic Aspects:} Literature remains largely static, with limited work on ignition 
+            or evolving platform competition.
+      \item \emph{Multi‐Homing Nuances:} Different values for agents’ interactions across sides 
+            require richer models of multi‐homing behavior.
+      \item \emph{Discrimination and Design:} Need more flexible models covering discriminatory 
+            practices, bundling, feedback/recommendation systems, integration, and entry rules.
+      \item \emph{Industry‐Specific Studies:} Areas like media, finance, housing, transportation, 
+            and health insurance offer promising directions for deeper analysis and policy implications.
+    \end{itemize}
+\end{frame}
+\end{document}
