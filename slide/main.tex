@@ -75,7 +75,7 @@
             \vspace{1em}
             \item \textbf{Direct network effects} occur when the value of a product, service, or platform increases simply because the number of users increases, causing the network itself to grow
             \vspace{1em}
-            \item \textbf{Indirect network effects} occur when a platform or service depends on two or more user groups, such as producers and consumers, buyers and sellers, or users and developers
+            \item \textbf{Indirect network effects} occur when a platform or service depends on two or more user groups. As more people from one group join the platform, the other group receives a greater value.
         \end{itemize}
 
     \end{itemize}
@@ -105,6 +105,7 @@
 \end{frame}
 
 \section{Benchmark Model}
+\subsection{Armstrong(2006): Monopoly Pricing}
 \begin{frame}{Armstrong(2006): Monopoly Pricing}
     \begin{equation*}
         \Large
@@ -124,7 +125,7 @@
 \end{frame}
 
 \begin{frame}{Armstrong(2006): Monopoly Pricing}
-    \textbf{Utility of agents}
+    \textbf{Net Payoff of Agents}
     \vspace{1em}
     \begin{equation}
         \large
@@ -159,6 +160,11 @@
                                   $u_{1}, u_{2}$ (utilities) to participation
       \item $u_{1}, u_{2}$: utilities offered to agents in groups 1 and 2
     \end{itemize}
+    \vspace{1em}
+    \begin{equation*}
+        \large
+        \pi = (p_1 - f_1)n_1 + (p_2 - f_2) n_2
+    \end{equation*}
 \end{frame}
 
 \begin{frame}{Armstrong (2006): Monopoly Pricing}
@@ -179,6 +185,11 @@
       \item $\alpha_{1}, \alpha_{2}$: cross‐group interaction benefits
       \item $\phi_{1}, \phi_{2}$: same demand functions as in the previous slide
     \end{itemize}
+    \vspace{1em}
+    \begin{equation*}
+        \large
+        p_1 = \alpha_1 n_2 - u_1, \quad p_2 = \alpha_2 n_1 - u_2
+    \end{equation*}
 \end{frame}
 
 \begin{frame}{Armstrong (2006): Monopoly Pricing}
@@ -199,16 +210,17 @@
        u_2 = (\alpha_1 + \alpha_2)\,n_1 \;-\; f_2.
     \]
     
+
+\end{frame}
+
+\begin{frame}{Armstrong (2006): Monopoly Pricing}
+    \justifying
     From expression (1), the socially optimal prices satisfy
     \[
        p_1 = f_1 \;-\; \alpha_2\,n_2,
        \qquad
        p_2 = f_2 \;-\; \alpha_1\,n_1.
     \]
-\end{frame}
-
-\begin{frame}{Armstrong (2006): Monopoly Pricing}
-    \justifying
 
     From expression~(2), the profit‐maximizing prices satisfy:
     \[
@@ -236,7 +248,7 @@
       \frac{p_{2}\,\phi_{2}'(\alpha_{2}n_{1} - p_{2})}{\phi_{2}(\alpha_{2}n_{1} - p_{2})}.
     \]
     
-    for a group’s price elasticity of demand given the other group’s participation level.  
+    for a group’s price elasticity of demand \textcolor{red}{given the other group’s participation level}.  
     Then the profit‐maximizing pair of prices satisfy
     
     \[
@@ -251,54 +263,54 @@
     
     \end{frame}
 
-\begin{frame}{Armstrong (2006): Main Conclusions of Monopoly Pricing}
+\begin{frame}{Armstrong (2006): Price Distortions in Monopoly Pricing}
+        \large
+        \textbf{Difference between profit-maximizing and efficient prices:}
+        
+        \vspace{0.5em}
+        
+        \begin{equation*}
+        \begin{aligned}
+        P_i^* - P_i^e &= \underbrace{\eta_i\left(P_i^*; q_j^*\right)}_{\text{markup}} 
+        + \underbrace{q_j^e \left( \gamma_j(P_1^e, P_2^e) - \tilde{\gamma}_j(P_1^e, P_2^e) \right)}_{\text{Spence distortion}} \\
+        &\quad + \underbrace{q_j^e \left( \tilde{\gamma}_j(P_1^e, P_2^e) - \tilde{\gamma}_j(P_1^*, P_2^*) \right)}_{\text{displacement distortion}} 
+        + \underbrace{\left(q_j^e - q_j^*\right)\left( \tilde{\gamma}_j(P_1^*, P_2^*) - \sigma \right)}_{\text{scale distortion}}
+        \end{aligned}
+        \end{equation*}
+        
+        \vspace{0.5em}
+        
+
+        
+        \textit{Combined effect may raise or lower prices compared to efficient levels on either side.}
+\end{frame}
+        
+        
+
+\begin{frame}{Armstrong (2006): Extensions of Monopoly Pricing}
     \justifying  % Requires \usepackage{ragged2e} in the preamble
-    
-    A monopolist platform, serving two distinct groups that benefit from interacting 
-    with one another, does not simply set each group’s price to cover the marginal 
-    cost of serving that group. Instead, it balances the prices charged to each side 
-    to account for cross‐group externalities and differences in demand elasticities.
-    This leads to the following key insights:
-    
     \begin{itemize}
-        \item \textbf{Cross‐Group Externalities:} Prices on one side depend on how 
-        that side’s participation affects the other side’s willingness to join.
-    
-        \item \textbf{Balancing Demand:} If one side’s presence is highly valuable 
-        to the other side, the platform may lower or subsidize that side’s fee 
-        to maximize overall profit.
-    
-        \item \textbf{Interdependence of Pricing:} Optimal monopoly prices for each 
-        group differ from the standard one‐sided monopoly outcome, reflecting 
-        the platform’s internalization of cross‐group effects.
+        \item \textbf{Chicken \& Egg Problem} (Caillaud and Jullian, 2003): To overcome such pessimistic beliefs and successfully launch a platform, the platform must subsidize one side of the market through monetary ppayments or by offering additional services that raise the stand alone and make them positive to attract users.
+        \vspace{1em}
+        \item \textbf{Vertical integration}: Offering conten in addition to matching services allows the platform to raise the value that buyers derive from joining and secure their participation(Haigu and Spulber, 2013; Miao, 2009; Decorniere and Taylor, 2014; Wen and Zhu, 2019; zhu and Liu, 2016)
+        \vspace{1em}
+        \item \textbf{Non-negative prices} (Amelio and Jullien, 2012): when the unconstrained monopoly price is negative, constraning the price to be non-negative has a detrimental effect not only on the platform but also on consumers        
     \end{itemize}
     
 \end{frame}
 
-\begin{frame}{Armstrong (2006): Extension of Monopoly Pricing}
+\begin{frame}{Armstrong (2006): Extensions of Monopoly Pricing}
     \justifying  % Requires \usepackage{ragged2e} in the preamble
-    
-    A monopolist platform, serving two distinct groups that benefit from interacting 
-    with one another, does not simply set each group’s price to cover the marginal 
-    cost of serving that group. Instead, it balances the prices charged to each side 
-    to account for cross‐group externalities and differences in demand elasticities.
-    This leads to the following key insights:
-    
     \begin{itemize}
-        \item \textbf{Cross‐Group Externalities:} Prices on one side depend on how 
-        that side’s participation affects the other side’s willingness to join.
-    
-        \item \textbf{Balancing Demand:} If one side’s presence is highly valuable 
-        to the other side, the platform may lower or subsidize that side’s fee 
-        to maximize overall profit.
-    
-        \item \textbf{Interdependence of Pricing:} Optimal monopoly prices for each 
-        group differ from the standard one‐sided monopoly outcome, reflecting 
-        the platform’s internalization of cross‐group effects.
+        \item \textbf{Distprtionary taxition and two-part tariffs}: taxation of usage has a distortionary effect and in this case the choice of transaction fees matters for efficiencies(Calvano, 2013)
+        \vspace{1em}
+        \item \textbf{Dynamic pricing} (Cabral, 2019): The platform thus is treated as a durable good with two-sided network externalities and random obsolescence. Peitz et al. (2017) finds that a platform may benfit from lowering its prices at a nearly stage of development, relative to short-run profit maximization. In a dymic setting, the subsidy vanishes and prices become positive as the consumer base increases
+        
     \end{itemize}
     
 \end{frame}
 
+    \subsection{Armstrong(2006): Competition for the Market}
 \begin{frame}{Armstrong(2006): Competition for the Market}
     \begin{block}{Basic Setting}
         \begin{enumerate}
@@ -546,51 +558,39 @@
 \begin{frame}{Armstrong (2006): Main Conclusions of Competition for the Market}
     \justifying  % Requires \usepackage{ragged2e} in the preamble
     
-    A monopolist platform, serving two distinct groups that benefit from interacting 
-    with one another, does not simply set each group’s price to cover the marginal 
-    cost of serving that group. Instead, it balances the prices charged to each side 
-    to account for cross‐group externalities and differences in demand elasticities.
-    This leads to the following key insights:
-    
+    \textbf{Key determinant:}  
+    The nature of competition depends on the balance between:
     \begin{itemize}
-        \item \textbf{Cross‐Group Externalities:} Prices on one side depend on how 
-        that side’s participation affects the other side’s willingness to join.
-    
-        \item \textbf{Balancing Demand:} If one side’s presence is highly valuable 
-        to the other side, the platform may lower or subsidize that side’s fee 
-        to maximize overall profit.
-    
-        \item \textbf{Interdependence of Pricing:} Optimal monopoly prices for each 
-        group differ from the standard one‐sided monopoly outcome, reflecting 
-        the platform’s internalization of cross‐group effects.
+        \item \textbf{Interaction benefits} across platforms, and
+        \item \textbf{Horizontal differentiation} (measured by differences in agents’ stand-alone values/ transportation costs)
     \end{itemize}
+    
+    \vspace{0.5em}
+    
+    \textbf{Implications:}
+    \begin{itemize}
+        \item \textbf{Small interaction benefits} $\Rightarrow$ Platforms can share the market
+        \item \textbf{Large interaction benefits} $\Rightarrow$ One platform tends to dominate
+    \end{itemize}
+    
+    \vspace{0.5em}
+    \textit{This section focuses on markets with large interaction benefits. The low-benefit case is examined next}
     
 \end{frame}
 
 \begin{frame}{Armstrong (2006): Extension of Competition for the Market}
     \justifying  % Requires \usepackage{ragged2e} in the preamble
     
-    A monopolist platform, serving two distinct groups that benefit from interacting 
-    with one another, does not simply set each group’s price to cover the marginal 
-    cost of serving that group. Instead, it balances the prices charged to each side 
-    to account for cross‐group externalities and differences in demand elasticities.
-    This leads to the following key insights:
-    
     \begin{itemize}
-        \item \textbf{Cross‐Group Externalities:} Prices on one side depend on how 
-        that side’s participation affects the other side’s willingness to join.
-    
-        \item \textbf{Balancing Demand:} If one side’s presence is highly valuable 
-        to the other side, the platform may lower or subsidize that side’s fee 
-        to maximize overall profit.
-    
-        \item \textbf{Interdependence of Pricing:} Optimal monopoly prices for each 
-        group differ from the standard one‐sided monopoly outcome, reflecting 
-        the platform’s internalization of cross‐group effects.
+        \item \textbf{Divide-and-Conquer strategies}: Strategies that set prices below cost for some consumers compensated with prices above cost for other consumers (Caillaud and Jullien, 2001/2003; Jullien, 2011)
+        \vspace{1em}
+        \item \textbf{Congestion within sides}: Network externalities withn sides may originate from congestion effects or competition between agents on the same sides (Belleflamme and Toulemonde, 2009), which may also prevent \textcolor{red}{tipping} (Halaburda et al., 2018)
+        \vspace{1em}
+        \item \textbf{Dynamic competition}: whether there is increasing dominance of the largest network eventually resulting in tipping? (Cabral, 2011; Halaburda et al., 2020; Biglaiser and Cremer, 2020))
     \end{itemize}
     
 \end{frame}
-
+\subsection{Armstrong(2006): Competition on the Market}
 \begin{frame}{Armstrong(2006): Competition on the Market}
     \begin{block}{Basic Setting}
         \begin{enumerate}
@@ -716,66 +716,30 @@
 
 \begin{frame}{Armstrong (2006): Main Conclusions of Competition on the Market}
     \justifying  % Requires \usepackage{ragged2e} in the preamble
+    \textbf{Proposition :}
+    In the competitive bottleneck model, in any equilibrium the number of group-2 agents on a platform is chosen to maximize the joint surplus of the platform and its group-1agents, and the interests of group 2 are ignored. Unless there are externalities within the set of group-2 agents, there are too few group-2 agents on each platform given the distribution of group-1agents on each platform
     
-    A monopolist platform, serving two distinct groups that benefit from interacting 
-    with one another, does not simply set each group’s price to cover the marginal 
-    cost of serving that group. Instead, it balances the prices charged to each side 
-    to account for cross‐group externalities and differences in demand elasticities.
-    This leads to the following key insights:
+    \vspace{1em}
+    \textit{This highlights a welfare inefficiency due to platform-side optimization focused on group 1 without considering group 2}
     
-    \begin{itemize}
-        \item \textbf{Cross‐Group Externalities:} Prices on one side depend on how 
-        that side’s participation affects the other side’s willingness to join.
-    
-        \item \textbf{Balancing Demand:} If one side’s presence is highly valuable 
-        to the other side, the platform may lower or subsidize that side’s fee 
-        to maximize overall profit.
-    
-        \item \textbf{Interdependence of Pricing:} Optimal monopoly prices for each 
-        group differ from the standard one‐sided monopoly outcome, reflecting 
-        the platform’s internalization of cross‐group effects.
-    \end{itemize}
     
 \end{frame}
 
 \begin{frame}{Armstrong (2006): Extension of Competition on the Market}
     \justifying  % Requires \usepackage{ragged2e} in the preamble
     
-    A monopolist platform, serving two distinct groups that benefit from interacting 
-    with one another, does not simply set each group’s price to cover the marginal 
-    cost of serving that group. Instead, it balances the prices charged to each side 
-    to account for cross‐group externalities and differences in demand elasticities.
-    This leads to the following key insights:
-    
     \begin{itemize}
-        \item \textbf{Cross‐Group Externalities:} Prices on one side depend on how 
-        that side’s participation affects the other side’s willingness to join.
-    
-        \item \textbf{Balancing Demand:} If one side’s presence is highly valuable 
-        to the other side, the platform may lower or subsidize that side’s fee 
-        to maximize overall profit.
-    
-        \item \textbf{Interdependence of Pricing:} Optimal monopoly prices for each 
-        group differ from the standard one‐sided monopoly outcome, reflecting 
-        the platform’s internalization of cross‐group effects.
+        \item \textbf{Multihoming on both sides}: Doganoglu and Wright (2006) incremental pricing principle
+        \vspace{1em}
+        \item \textbf{Concentration and entry of platforms}: seesaw principle (Rochet and Tirole, 2006; Correia-da Silve et aal., 2019; Anderson and Peitz, 2020)
+        \vspace{1em}
+        \item \textbf{Horizontal mergers}: Because of two-sidedness, a merger may not lead to higher prices and lower consumer surplus on both sides (Chandra and Collard Wexler, 2009; Tan and Zhou, 2020; Leonello, 2010)
+        \vspace{1em}
+        \item \textbf{Collusion}: Dewenter et al.(2001), Lefouili and Pinho(2020)
+        \vspace{1em}
+        \item \textbf{Exclusive dealing and Bundling}
     \end{itemize}
     
-\end{frame}
-
-\section{Extensions and Insights}
-\begin{frame}{Results}
-    \begin{columns}
-        \column{0.5\textwidth}
-        \begin{itemize}
-            \item Result 1
-            \item Result 2
-        \end{itemize}
-        
-        \column{0.5\textwidth}
-        % Placeholder for a figure
-        \centering
-        [Your figure here]
-    \end{columns}
 \end{frame}
 
 % Section 4
