@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Benchmark Model}{6}{0}{2}
+\beamer@subsectionintoc {2}{1}{Armstrong(2006): Monopoly Pricing}{6}{0}{2}
+\beamer@subsectionintoc {2}{2}{Armstrong(2006): Competition for the Market}{16}{0}{2}
+\beamer@subsectionintoc {2}{3}{Armstrong(2006): Competition on the Market}{26}{0}{2}
+\beamer@sectionintoc {3}{Conclusion and Future Directions}{32}{0}{3}
